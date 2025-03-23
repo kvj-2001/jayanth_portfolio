@@ -1,0 +1,135 @@
+.project-div{
+    padding-left: 100px;
+}
+/* Main Container */
+.project-main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 50px 20px;
+    background-color: #f9f9f9; /* Light Gray Background */
+  }
+  
+  /* Section Heading */
+  .project-heading {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  /* Project Grid */
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 1100px;
+  }
+  
+  /* Project Card Styling */
+  .project-card {
+    display: flex;
+    background-color: #fff;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  /* Hover Effect */
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Project Image */
+  .project-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+  
+  /* Project Content Styling */
+  .project-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /* Project Title */
+  .project-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 8px;
+  }
+  
+  /* Technology Stack */
+  .project-tech {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 8px;
+  }
+  
+  /* Description */
+  .project-description,
+  .project-description1 {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  /* GitHub/Reference Link */
+  .project-link {
+    text-decoration: none;
+    padding: 6px 12px;
+    background-color: #4caf50;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 14px;
+    text-align: center;
+    max-width: 120px;
+    transition: background-color 0.3s;
+    align-content: center;
+    margin: 10px;
+  }
+  
+  .project-link:hover {
+    background-color: #388e3c;
+  }
+
+  .project-buttons{
+    display: flex;
+  }
+  
+  /* Responsive Design for Mobile */
+  @media (max-width: 768px) {
+    .project-div{
+        padding-left: 0px;
+    }
+    .project-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .project-card {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .project-image {
+      margin-bottom: 12px;
+      margin-right: 0;
+    }
+  
+    .project-content {
+      align-items: center;
+    }
+  }
+  

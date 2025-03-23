@@ -1,0 +1,132 @@
+/* Hero section container */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    background-color: white;
+    width: 100%;
+    height: 90vh; /* Full page height */
+    box-sizing: border-box;
+  }
+  
+  /* Content container inside hero */
+  .hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1300px; /* Wider container for better spacing */
+    gap: 70px;
+  }
+  
+  /* Left side - Text content */
+  .hero-text {
+    width: 100%;
+    padding-right: 32px;
+  }
+  
+  /* Name heading style */
+  .name {
+    font-size: 56px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: #1f2937;
+  }
+  
+  /* Description text style */
+  .description {
+    font-size: 20.8px;
+    line-height: 1.6;
+    max-width: 600px;
+    color: #4b5563;
+  }
+  
+  /* Button container to hold buttons */
+  .button-container {
+    margin-top: 24px;
+    display: flex;
+    gap: 16px;
+  }
+  
+  /* General button styles */
+  .btn {
+    padding: 14.4px 28.8px;
+    font-size: 17.6px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Preview button styles */
+  .preview-btn {
+    background-color: #3b82f6;
+    color: white;
+  }
+  
+  .preview-btn:hover {
+    background-color: #2563eb;
+  }
+  
+  /* Download button styles */
+  .download-btn {
+    background-color: #10b981;
+    color: white;
+  }
+  
+  .download-btn:hover {
+    background-color: #059669;
+  }
+  
+  /* Right side - Image */
+  .hero-image {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    max-width: 600px; /* Increased image size */
+    height: auto;
+    border-radius: 12px;
+    transform: scale(1.05);
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      text-align: center;
+      height: auto;
+      padding: 32px 5%;
+    }
+  
+    .hero-content {
+      flex-direction: column;
+      gap: 32px;
+    }
+  
+    .hero-text {
+      width: 100%;
+      padding: 0;
+      margin-bottom: 32px;
+    }
+
+    .name {
+        font-size: 45px;
+      }
+  
+    .hero-image {
+      width: 100%;
+      justify-content: center;
+    }
+  
+    .hero-image img {
+      width: 80%;
+      max-width: 350px;
+    }
+  }

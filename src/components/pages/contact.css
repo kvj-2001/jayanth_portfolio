@@ -1,0 +1,79 @@
+.contact-div{
+  padding-left: 360px;
+}
+/* Contact Container */
+.contact-container {
+  width: 100%;
+  max-width: 800px;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  text-align: center;
+}
+
+/* Heading Styles */
+.contact-heading {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Contact Content Grid */
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Contact Item Box */
+.contact-item {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.contact-item:hover {
+  transform: translateY(-5px);
+}
+
+/* Icon and Label Styles */
+.contact-item a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Icon Styling */
+.contact-icon {
+  font-size: 22px;
+  color: #4caf50;
+}
+
+.contact-item a:hover {
+  color: #4caf50;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .contact-div{
+    padding-left: 12px;
+  }
+  .contact-content {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-container {
+    width: 100%;
+    margin-top: 20px;
+  }
+}

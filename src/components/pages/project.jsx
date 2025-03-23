@@ -1,5 +1,5 @@
 import React from "react";
-import "./Project.css";
+import "./project.css";
 import Headers from "./../header/Headers";
 import Footer from "../footer/footer";
 import ams from "./../../assets/AMS.jpeg";

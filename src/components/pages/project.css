@@ -1,5 +1,11 @@
 .project-div{
-    padding-left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 210vh;
+  height: 150vh;
+  margin: 0;
+  background-color: white;
 }
 /* Main Container */
 .project-main-container {

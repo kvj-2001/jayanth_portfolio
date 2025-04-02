@@ -1,4 +1,5 @@
 import React from "react";
+import Lottie from "lottie-react";
 import "./about.css";
 import java from "./../../assets/java1.png";
 import python from "./../../assets/python.png";
@@ -16,54 +17,34 @@ import mysql from "./../../assets/mysql.png";
 import profile from "./../../assets/photo.jpg";
 import Headers from "./../header/Headers";
 import Footer from "./../footer/footer";
+import animation from './../../assets/Animation.json'
 import { FaGraduationCap, FaBriefcase, FaCode, FaProjectDiagram } from "react-icons/fa";
 
 // Skill Data
-const skillsData = [
-  {
-    category: "Programming Languages",
-    skills: [
-      { name: "Java", img: java },
-      { name: "Python", img: python },
-      { name: "C", img: clang },
-      { name: "C++", img: cplus },
-    ],
-  },
-  {
-    category: "Frontend",
-    skills: [
-      { name: "HTML", img: html },
-      { name: "CSS", img: css },
-      { name: "React", img: react },
-      { name: "JavaScript", img: js },
-    ],
-  },
-  {
-    category: "Backend",
-    skills: [
-      { name: "Spring Boot", img: spring },
-      { name: "Flask", img: flask },
-    ],
-  },
-  {
-    category: "Operating Systems",
-    skills: [
-      { name: "macOS", img: macos },
-      { name: "Windows", img: windows },
-    ],
-  },
-  {
-    category: "Databases",
-    skills: [{ name: "MySQL", img: mysql }],
-  },
+const skills = [
+  { name: "Java", img: java },
+  { name: "Spring Boot", img: spring },
+  { name: "React", img: react },
+  { name: "Python", img: python },
+  { name: "Flask", img: flask },
+  { name: "C", img: clang },
+  { name: "C++", img: cplus },
+  { name: "HTML", img: html },
+  { name: "SQL", img: mysql },
+  { name: "CSS", img: css },
+  { name: "Kubernetes", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" },
+  { name: "AWS", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" },
+  { name: "Git", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+  { name: "MAC OS", img: macos },
+  { name: "Windows", img: windows }
 ];
 
 // Timeline Data
 const timelineData = [
-    { year: "2017", title: "10th Grade", icon: <FaGraduationCap />, description: "Little Flower E.M. School" },
-    { year: "2019", title: "Intermediate", icon: <FaGraduationCap />, description: "Sree Venkateswara Junior College" },
-    { year: "2023", title: "B.Tech", icon: <FaGraduationCap />, description: "KKR & KSR Institute of Technology and Sciences" },
     { year: "2024", title: "HCLTech", icon: <FaBriefcase />, description: "Software Engineer focusing on Java and Spring Boot." },
+    { year: "2023", title: "B.Tech", icon: <FaGraduationCap />, description: "KKR & KSR Institute of Technology and Sciences" },
+    { year: "2019", title: "Intermediate", icon: <FaGraduationCap />, description: "Sree Venkateswara Junior College" },
+    { year: "2017", title: "10th Grade", icon: <FaGraduationCap />, description: "Little Flower E.M. School" },
   ];
 
 function About() {
@@ -103,7 +84,7 @@ function About() {
 
        {/* Timeline Section */}
        <div className="timeline">
-        <h4>Education & Experience Timeline</h4>
+        <h3>Education & Experience Timeline</h3>
         <div className="timeline-container">
           {timelineData.map((item, index) => (
             <div key={index} className="timeline-item">
@@ -119,22 +100,23 @@ function About() {
       </div>
 
       {/* Skills Section */}
-      <div className="skills">
-        <h4>Skills</h4>
-        {skillsData.map((category, index) => (
-          <div key={index} className="skill-category">
-            <h5>{category.category}</h5>
-            <div className="skill-container">
-              {category.skills.map((skill, idx) => (
-                <div key={idx} className="skill-card">
-                  <img src={skill.img} alt={skill.name} />
-                  <p>{skill.name}</p>
-                </div>
-              ))}
-            </div>
+      <br/><br/><br/>
+      <h3>Skills</h3>
+      <div className="skills-container">
+      {/* Left: Profile Image */}
+      <Lottie animationData={animation} loop={true} style={{ width: 400, height: 400 }} />
+      
+      {/* Right: Skills Grid */}
+      <div className="skills-grid">
+        {skills.map((skill, index) => (
+          <div className="skill-card">
+            <img src={skill.img} alt={skill.name} />
+            <p>{skill.name}</p>
           </div>
         ))}
       </div>
+    </div>
+
     </section>
     <Footer/>
     </>

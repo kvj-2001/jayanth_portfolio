@@ -1,5 +1,11 @@
 .contact-div{
-  padding-left: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 210vh;
+  height: 100vh;
+  margin: 0;
+  background-color: white;
 }
 /* Contact Container */
 .contact-container {

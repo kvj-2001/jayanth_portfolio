@@ -1,121 +1,136 @@
-/* General body styles to fix content being pushed */
+/* Reset and Global Styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Ensure body takes padding into account */
-  body {
-    margin: 0;
-    padding-top: 70px; /* Make space for fixed header */
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Header container styles */
-  .header {
-    background-color: white;
-    color: black;
-    padding: 1rem 5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-  }
-  
-  /* Logo styles */
-  .logo {
-    font-size: 32px;
-    font-weight: bold;
-    letter-spacing: 1.5px;
-    cursor: pointer;
-  }
-  
-  /* Desktop navigation styles */
-  .nav {
-    display: flex;
-    gap: 1.5rem;
-  }
-  
-  /* Navigation link styles */
-  .nav-link {
-    color: black;
-    text-decoration: none;
-    font-size: 17px;
-    font-weight: bold;
-    transition: color 0.3s ease;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 20px;
-  }
-  
-  .nav-link:hover {
-    color: white;
-    background-color: #10b981;
-  }
-  
-  /* Hamburger menu icon */
-  .menu-icon {
-    display: none;
-    font-size: 28px;
-    cursor: pointer;
-  }
-  
-  /* Mobile navigation dropdown */
-  .nav-mobile {
-    display: none;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    flex-direction: column;
-    gap: 0;
-  }
-  
-  /* Mobile nav links */
-  .nav-mobile a {
-    padding: 1rem;
-    text-align: center;
-    border-top: 1px solid #e5e7eb;
-    text-decoration: none;
-    color: black;
-    font-size: 16px;
-    font-weight: 500;
-  }
-  
-  /* Dropdown hover */
-  .nav-mobile a:hover {
-    background-color: rgb(71, 193, 112);
-    color: white;
-  }
-  
-  /* Show mobile menu when toggled */
-  .nav-mobile.show {
-    display: flex;
-  }
-  
-  /* Media Query for mobile view */
-  @media (max-width: 768px) {
-    .nav {
-      display: none; /* Hide desktop nav */
-    }
-  
-    .menu-icon {
-      display: block; /* Show menu icon in mobile */
-    }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    .logo {
-        font-size: 20px;
-        font-weight: bold;
-        letter-spacing: 1.5px;
-        cursor: pointer;
-      }
+body {
+  margin: 0;
+  padding-top: 70px; /* Adjusted for fixed header */
+  font-family: Arial, sans-serif;
+  width:100vw;
+  height:fit-content;
+}
+
+/* Header Styles */
+.header {
+  background-color: white;
+  color: black;
+  padding: 1rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+}
+
+/* Navigation Styles */
+.nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  color: black;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.nav-link:hover {
+  color: white;
+  background-color: #10b981;
+}
+
+/* Mobile Navigation */
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100vw;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+  gap: 0;
+}
+
+.nav-mobile a {
+  padding: 1rem;
+  text-align: center;
+  border-top: 1px solid #e5e7eb;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.nav-mobile a:hover {
+  background-color: rgb(71, 193, 112);
+  color: white;
+}
+
+.nav-mobile.show {
+  display: flex;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .nav {
+      gap: 1rem;
   }
-  
+  .nav-link {
+      font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+      display: none;
+  }
+  .menu-icon {
+      display: block;
+  }
+  .nav-mobile {
+      display: none; /* Hidden by default */
+      flex-direction: column;
+  }
+  .nav-mobile.show {
+      display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+      padding: 1rem 3%;
+  }
+  .logo {
+      font-size: 24px;
+  }
+  .nav-mobile a {
+      font-size: 14px;
+  }
+}

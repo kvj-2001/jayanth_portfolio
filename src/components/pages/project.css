@@ -2,8 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 210vh;
-  height: 150vh;
+  width: 100vw;
+  height: fit-content;
   margin: 0;
   background-color: white;
 }
@@ -65,7 +65,6 @@
   .project-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
   }
   
   /* Project Title */
@@ -95,7 +94,7 @@
   .project-link {
     text-decoration: none;
     padding: 6px 12px;
-    background-color: #4caf50;
+    background-color: #10b981;
     color: #fff;
     border-radius: 8px;
     font-size: 14px;
@@ -107,7 +106,8 @@
   }
   
   .project-link:hover {
-    background-color: #388e3c;
+    background-color: rgb(141, 138, 138);
+    color: #fff;
   }
 
   .project-buttons{

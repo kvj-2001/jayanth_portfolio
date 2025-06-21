@@ -1,140 +1,147 @@
 /* Hero section container */
 .hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 60px;
-    background-color: white;
-    width: 200vh;
-    height: 100vh; /* Full page height */
-    box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 4%;
+  background-color: white;
+  width: 100vw;
+  height: fit-content;
+  margin-bottom: 90px;
+  box-sizing: border-box;
+}
+
+/* Content container */
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  max-width: 1100px;
+  gap: 40px;
+}
+
+/* Left Side - Text */
+.hero-text {
+  flex: 1;
+  padding-right: 32px;
+}
+
+/* Name heading */
+.name {
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #1f2937;
+}
+
+/* Description text */
+.description {
+  font-size: 24px;
+  line-height: 1.5;
+  max-width: 550px;
+  color: #4b5563;
+}
+
+/* Button container */
+.button-container {
+  margin-top: 20px;
+  display: flex;
+  gap: 14px;
+}
+
+/* General button styles */
+.btn {
+  padding: 14px 26px;
+  font-size: 17px;
+  font-weight: 500;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Right Side - Image */
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  max-width: 500px;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Tablet View */
+@media (max-width: 1024px) {
+  .hero {
+    padding: 40px 3%;
+    /* transform: scale(0.85); Shrinks hero for tablet */
   }
-  
-  /* Content container inside hero */
+
   .hero-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 1300px; /* Wider container for better spacing */
-    gap: 70px;
+    flex-direction: column-reverse;
+    gap: 30px;
+    text-align: center;
   }
-  
-  /* Left side - Text content */
-  .hero-text {
-    width: 100%;
-    padding-right: 32px;
-  }
-  
-  /* Name heading style */
+
   .name {
-    font-size: 56px;
-    font-weight: bold;
-    margin-bottom: 16px;
-    color: #1f2937;
+    font-size: 36px;
   }
-  
-  /* Description text style */
+
   .description {
-    font-size: 32px;
-    line-height: 1.6;
-    max-width: 600px;
-    color: #4b5563;
+    font-size: 20px;
   }
 
-  .descriptionName {
-    color: #10b981;
-    font-weight: bold;
-  }
-  
-  /* Button container to hold buttons */
-  .button-container {
-    margin-top: 24px;
-    display: flex;
-    gap: 16px;
-  }
-  
-  /* General button styles */
-  .btn {
-    padding: 14.4px 28.8px;
-    font-size: 17.6px;
-    font-weight: 500;
-    border: none;
-    border-radius: 40px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  /* Preview button styles */
-  .preview-btn {
-    background-color: #3b82f6;
-    color: white;
-  }
-  
-  .preview-btn:hover {
-    background-color: #2563eb;
-  }
-  
-  /* Download button styles */
-  .download-btn {
-    background-color: #10b981;
-    color: white;
-    font-weight: bold;
-  }
-  
-  .download-btn:hover {
-    background-color: rgb(141, 138, 138);
-  }
-  
-  /* Right side - Image */
-  .hero-image {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-
-  }
-  
   .hero-image img {
-    width: 100%;
-    max-width: 600px; /* Increased image size */
-    height: auto;
-    border-radius: 12px;
-    transform: scale(1.05);
-    padding-left: 30px;
+    max-width: 320px;
   }
-  
-  /* Responsive design for smaller screens */
-  @media (max-width: 768px) {
-    .hero {
-      flex-direction: column;
-      text-align: center;
-      height: auto;
-      padding: 32px 5%;
-    }
-  
-    .hero-content {
-      flex-direction: column;
-      gap: 32px;
-    }
-  
-    .hero-text {
-      width: 100%;
-      padding: 0;
-      margin-bottom: 32px;
-    }
+}
 
-    .name {
-        font-size: 45px;
-      }
-  
-    .hero-image {
-      width: 100%;
-      justify-content: center;
-    }
-  
-    .hero-image img {
-      width: 80%;
-      max-width: 350px;
-    }
+/* Mobile View */
+@media (max-width: 768px) {
+  .hero {
+    padding: 25px 3%;
+    /* transform: scale(0.8); Further zoom-out for mobile */
   }
+
+  .hero-content {
+    flex-direction: column-reverse;
+    gap: 28px;
+  }
+
+  .name {
+    font-size: 28px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .hero-image img {
+    max-width: 260px;
+  }
+}
+
+/* Extra Small Screens */
+@media (max-width: 480px) {
+  .hero {
+    padding: 20px 2%;
+    /* transform: scale(0.75); Slightly more zoom-out for small screens */
+  }
+
+  .name {
+    font-size: 24px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .hero-image img {
+    max-width: 220px;
+  }
+}

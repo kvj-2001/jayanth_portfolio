@@ -199,7 +199,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
-    max-width: 500px;
   }
   
   @media (min-width: 600px) {
@@ -250,6 +249,7 @@
     .about-container {
       flex-direction: column;
       text-align: center;
+      width: auto;
     }
   
     .about-image img {
@@ -269,6 +269,10 @@
   }
   
   @media (max-width: 480px) {
-    
+    .about-container {
+      flex-direction: column;
+      text-align: center;
+      width: auto;
+    }
   }
   

@@ -2,20 +2,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 210vh;
-  height: 100vh;
-  margin: 0;
+  width: 100vw;
+  height: 92vh;
   background-color: white;
 }
 /* Contact Container */
 .contact-container {
-  width: 100%;
-  max-width: 800px;
-  padding: 30px;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
   background-color: #fff;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
   text-align: center;
+  padding: 20px;
 }
 
 /* Heading Styles */
@@ -79,7 +79,6 @@
   }
 
   .contact-container {
-    width: 100%;
     margin-top: 20px;
   }
 }

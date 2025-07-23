@@ -1,12 +1,20 @@
-# React + Vite
+# Jayanth Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the source code for Jayanth's personal portfolio! This repository contains the code and assets for a modern, responsive portfolio website showcasing skills, projects, and contact information.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Responsive Design:** Works across desktops, tablets, and phones.
+- **Project Showcase:** Highlights key projects with descriptions, technologies used, and links.
+- **About Me:** Introduction, experience, and education.
+- **Contact Section:** Contact form or social media links for easy reach.
+- **Modern Tech Stack:** Built with contemporary web technologies.
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+To run this portfolio locally:
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/kvj-2001/jayanth_portfolio.git
+   cd jayanth_portfolio

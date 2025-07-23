@@ -1,7 +1,6 @@
 import React from "react";
-import './contact.css';
+import '../../App.css';
 import { FaEnvelope, FaLinkedin, FaGithub, FaHackerrank } from "react-icons/fa";
-import Headers from './../header/Headers'
 
 const Contact = () => {
   const contactData = [
@@ -33,7 +32,6 @@ const Contact = () => {
 
   return (
     <>
-    <Headers/>
     <div className="contact-div">
     <div className="contact-container">
       <h2 className="contact-heading">Get in Touch</h2>

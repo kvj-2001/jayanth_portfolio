@@ -1,6 +1,5 @@
 import React from "react";
-import "./project.css";
-import Headers from "./../header/Headers";
+import "../../App.css";
 import Footer from "../footer/footer";
 import ams from "./../../assets/AMS.jpeg";
 import sbota from "./../../assets/s-bota.jpg";
@@ -43,7 +42,6 @@ const Project = () => {
 
   return (
     <>
-    <Headers/>
     <div className="project-div">
     <div className="project-main-container">
       <h2 className="project-heading">My Projects</h2>
@@ -88,7 +86,6 @@ const Project = () => {
       </div>
     </div>
     </div>
-    <Footer/>
     </>
   );
 };

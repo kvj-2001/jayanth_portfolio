@@ -1,5 +1,5 @@
 import React from 'react';
-import './footer.css';
+import '../../App.css';
 import { FaGithub, FaLinkedin, FaHackerrank, FaEnvelope } from 'react-icons/fa';
 
 function Footer() {

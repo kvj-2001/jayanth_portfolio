@@ -1,6 +1,6 @@
 import React from "react";
 import Lottie from "lottie-react";
-import "./about.css";
+import "../../App.css";
 import java from "./../../assets/java1.png";
 import python from "./../../assets/python.png";
 import clang from "./../../assets/c1.png";
@@ -15,7 +15,6 @@ import macos from "./../../assets/macos.png";
 import windows from "./../../assets/windows.png";
 import mysql from "./../../assets/mysql.png";
 import profile from "./../../assets/photo.jpg";
-import Headers from "./../header/Headers";
 import Footer from "./../footer/footer";
 import animation from './../../assets/Animation.json'
 import { FaGraduationCap, FaBriefcase, FaCode, FaProjectDiagram } from "react-icons/fa";
@@ -50,7 +49,6 @@ const timelineData = [
 function About() {
   return (
     <>
-    <Headers/>
     <section className="about">
       {/* Profile and Intro */}
       <div className="about-container">
@@ -118,7 +116,6 @@ function About() {
     </div>
 
     </section>
-    <Footer/>
     </>
   );
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import "./main.css";
+import "../../App.css";
 import Lottie from "lottie-react";
 import work from './../../assets/work.jpg'
 import workAnimation from './../../assets/Animation2.json'

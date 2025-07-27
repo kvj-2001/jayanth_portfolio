@@ -62,16 +62,15 @@ function App() {
         <section ref={contactRef} id="contact">
           
         </section>
-      </main>
-
-      {/* ---------------- Theme Toggle Button ---------------- */}
-      <button
+        {/* ---------------- Theme Toggle Button ---------------- */}
+      {/* <button
         className="theme-toggle-btn"
         onClick={toggleTheme}
         aria-label="Toggle Theme"
       >
         {theme === "light" ? "🌙" : "☀️"}
-      </button>
+      </button> */}
+      </main>
 
       <Footer />
     </div>

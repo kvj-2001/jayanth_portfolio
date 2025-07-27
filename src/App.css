@@ -49,6 +49,7 @@ body {
 
 .header {
   width: 100%;
+  width: 100%;
   background: var(--header-bg);
   display: flex;
   flex-direction: row;
@@ -89,18 +90,27 @@ body {
   height: 90vh;
   margin: 0 auto;
   padding: 1rem 4vw;
+  padding: 1rem 4vw;
   display: flex;
+  flex-direction: row;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   max-height: 200vh;
   gap: 2rem;
   box-sizing: border-box;
+  align-items: center;
+  max-height: 200vh;
+  gap: 2rem;
+  box-sizing: border-box;
 }
+
 
 .hero-content {
   width: 100%;
+  width: 100%;
   display: flex;
+  flex-direction: row;
   flex-direction: row;
   align-items: center;
   gap: 5rem;
@@ -112,19 +122,47 @@ body {
 }
 .hero-text .name {
   font-size: 2.4rem;
+  font-size: 2.4rem;
   font-weight: 700;
+  margin-bottom: 0.5rem;
   margin-bottom: 0.5rem;
   color: var(--text-color);
   line-height: 1.2;
+  line-height: 1.2;
 }
 .hero-text .description {
+  font-size: clamp(1.125rem, 2.3vw, 1.35rem);
   font-size: clamp(1.125rem, 2.3vw, 1.35rem);
   color: var(--text-color);
   max-width: 850px;
   margin: 0 auto;
   line-height: 1.6;
   padding: 0 1rem;
+  max-width: 850px;
+  margin: 0 auto;
+  line-height: 1.6;
+  padding: 0 1rem;
 }
+.descriptionName {
+  font-weight: bold;
+  color: var(--primary-accent);
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid var(--primary-accent);
+  display: inline-block;
+  width: 0;
+  vertical-align: middle;
+  animation: typing 2.5s steps(12) infinite alternate, blink 0.75s step-end infinite;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 17ch }
+}
+@keyframes blink {
+  0%, 100% { border-color: transparent }
+  50% { border-color: var(--primary-accent) }
+}
+
 .descriptionName {
   font-weight: bold;
   color: var(--primary-accent);
@@ -161,6 +199,7 @@ body {
   background: var(--button-bg);
   color: var(--button-text);
   transition: background 0.25s ease-in-out;
+  transition: background 0.25s ease-in-out;
 }
 .btn:hover,
 .btn:focus {
@@ -191,10 +230,14 @@ body {
   display: flex;
   flex-direction: row;
   align-items: start;
+  flex-direction: row;
+  align-items: start;
   gap: 2.2rem;
   margin: 20px;
 }
 .about-image img {
+  width: 205px;
+  height: 205px;
   width: 205px;
   height: 205px;
   object-fit: cover;
@@ -262,6 +305,14 @@ body {
   margin: 0 auto;
   padding-top: 3rem;
   gap: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-top: 3rem;
+  gap: 1.5rem;
 }
 .timeline-item {
   display: flex;
@@ -284,6 +335,10 @@ body {
   transform: translateY(-5px);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
+.timeline-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
 
 .skills-container { 
   margin: 2.4rem 0 0 0; 
@@ -297,6 +352,7 @@ body {
   width: 100%;
   display: grid;
   gap: 15px;
+  grid-template-columns: repeat(5, 1fr);
   grid-template-columns: repeat(5, 1fr);
   padding-left: 200px;
 }
@@ -316,12 +372,14 @@ body {
 .project-heading {
   font-size: 1.4rem;
   margin: 20px 0 1.5rem 0;
+  margin: 20px 0 1.5rem 0;
   text-align: center;
   color: var(--primary-accent);
 }
 .project-grid {
   display: grid;
   gap: 20px;
+  grid-template-columns: repeat(2,minmax(260px,1fr));
   grid-template-columns: repeat(2,minmax(260px,1fr));
 }
 .project-card {
@@ -402,6 +460,8 @@ body {
 }
 .theme-toggle-btn:hover { background: var(--button-hover-bg); }
 
+
+/* Desktop (1200+)
 /* Desktop (1200+)
 @media (min-width: 1200px) {
   .main-wrapper { max-width: 1350px; margin: 0 auto; }
@@ -415,3 +475,4 @@ body {
   .skills-grid { grid-template-columns: repeat(7, 1fr);}
   .about-image img { width: 242px; height: 242px; }
 }*/
+

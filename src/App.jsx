@@ -39,7 +39,7 @@ function App() {
         <div className="logo">JAYANTH</div>
         <nav className="nav">
           <button onClick={() => scrollToSection(heroRef)}>Home</button>
-          <button onClick={() => scrollToSection(aboutRef)}>About</button>
+          <button onClick={() => scrollToSection(aboutRef)}>About Me</button>
           <button onClick={() => scrollToSection(projectsRef)}>Projects</button>
           <button onClick={() => scrollToSection(contactRef)}>Contact</button>
         </nav>
@@ -63,13 +63,13 @@ function App() {
           
         </section>
         {/* ---------------- Theme Toggle Button ---------------- */}
-      {/* <button
+      <button
         className="theme-toggle-btn"
         onClick={toggleTheme}
         aria-label="Toggle Theme"
       >
         {theme === "light" ? "🌙" : "☀️"}
-      </button> */}
+      </button>
       </main>
 
       <Footer />

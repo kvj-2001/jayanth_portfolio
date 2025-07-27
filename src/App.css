@@ -43,7 +43,7 @@ body {
 
 .main-wrapper {
   min-height: 100vh;
-  max-width: 1350px;
+  max-width: auto;
   margin: 0 auto;
 }
 
@@ -85,8 +85,8 @@ body {
 .nav button:focus { color: var(--primary-accent); background: rgba(37,99,235,0.07); }
 
 .hero {
-  width: 100vw;
-  max-width: 1150px;
+  width: auto;
+  height: 90vh;
   margin: 0 auto;
   padding: 1rem 4vw;
   display: flex;
@@ -103,11 +103,12 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 2rem;
+  gap: 5rem;
 }
 .hero-text {
-  width: 100%;
-  text-align: center;
+  width: 50%;
+  text-align: left;
+  padding: 5px;
 }
 .hero-text .name {
   font-size: 2.4rem;
@@ -149,7 +150,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  justify-content: center;
+  justify-content: left;
 }
 .btn {
   font-size: 1rem;
@@ -165,19 +166,25 @@ body {
 .btn:focus {
   background: var(--button-hover-bg);
 }
-.hero-image {
+/* .hero-image {
   margin: 0 auto;
   width: 90%;
   max-width: 400px;
   flex-shrink: 1;
-}
+} */
+ Lottie{
+  width: 500px;
+  height: 500px;
+  flex-shrink: 1;
+ }
 
+ /* About CSS */
 .about,
 .project-div,
 .contact-div {
-  padding: 48px 6vw 0;
-  max-width: 1200px;
-  margin: 0 auto 50px auto;
+  padding: 55px 6vw 0;
+  width: auto;
+  margin: auto;
 }
 
 .about-container {
@@ -213,6 +220,29 @@ body {
   font-size: 1rem;
   margin-top: 0;
   color: var(--text-color);
+  line-height: 1.52;
+}
+
+.experience-container {
+  margin-top: 2.4rem;
+  padding: 0 1rem;
+}
+.experience-container h3{
+  font-size: 1.4rem;
+  color: var(--primary-accent);
+  text-align: left;
+  margin-bottom: 16px;
+}
+.experience-container .experience-dates {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #888;
+  margin-left: 10px;
+}
+.experience-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
   line-height: 1.52;
 }
 .timeline { margin: 2.4rem 0 0 0; }
@@ -357,7 +387,7 @@ body {
 .icon-container a:hover, .icon-container a:focus { color: var(--primary-accent); }
 
 .theme-toggle-btn {
-  position: relative;
+  position: fixed;
   bottom: 23px; right: 22px;
   background: var(--button-bg);
   color: var(--button-text);

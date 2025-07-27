@@ -33,7 +33,7 @@ const Hero = () => {
             animationData={workAnimation}
             loop
             autoPlay
-            style={{ width: "100%", height: "auto", maxWidth: "500px" }}
+            // style={{ width: "500px", height: "500px"}}
           />
         </div>
       </div>

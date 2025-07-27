@@ -58,23 +58,38 @@ function About() {
         <div className="about-content">
           <h3>Veera Jayanth K</h3>
           <p>
-            Welcome to my portfolio! I am a 2023 graduate with a strong passion
-            for programming and problem-solving, specializing in both backend
-            and frontend development. With a solid foundation in computer
-            science and hands-on experience in various projects, I thrive on
-            creating efficient and scalable solutions. My expertise spans
-            across multiple programming languages and frameworks, allowing me
-            to craft seamless user experiences and robust server-side
-            functionalities. I am dedicated to continuous learning and staying
-            updated with the latest industry trends to deliver high-quality,
-            innovative, and reliable software solutions.
+            I'm passionate Software Engineer driven by the challenge of solving complex problems 
+            and building impactful, scalable solutions. Hailing from Guntur, Andhra Pradesh, 
+            I hold a degree in Information Technology from KKR & KSR Institute of Technology and Sciences. 
+            My journey in tech began there and continues to evolve as I work on backend systems 
+            that blend innovation with real-world utility. Now based in Bangalore, I focus on creating 
+            robust and user-friendly applications that push boundaries and bring ideas to life. 
+            I take pride in writing clean, efficient code and contributing to solutions 
+            that truly make a difference.
           </p>
-          <br/>
-          <h4>Experience at HCLTech</h4>
-          <p>
-            Currently working as a Software Engineer at HCLTech, focusing on
-            Java and Spring Boot for backend development at Volvo Cars.
-          </p>
+        </div>
+      </div>
+
+      <div className="experience-container">
+        <h3>Experience</h3>
+        <div className="experience-content">
+          <div className="experience-item">
+            <h4>Software Engineer - HCLTech <span className="experience-dates">(2024 - Present)</span></h4>
+            <p>
+              Backend Java Developer - HCLTech (Volvo Cars Project) Led backend API development 
+              for Volvo Cars global Warranty Claims platform, scaling across 30+ markets and 
+              cutting dealer claim errors by 15%. Engineered region-specific authorization logic 
+              to maintain 100% compliance, while streamlining deployments via Argo CD, Kubernetes, 
+              and Volvo's API Management Portal—reducing release cycles by 30%. 
+              Integrated Sentry with Slack alerts to accelerate incident response by 40%, 
+              sustaining 99.9%+ API uptime. Designed Grafana dashboards to monitor throughput, 
+              latency, and errors, enabling data-driven performance tuning. In an agile 3-member team, 
+              helped architect microservices supporting Volvo's direct-to-consumer (D2C) 
+              e-commerce strategy. Currently leading a GenAI automation initiative using 
+              Python, Azure Blob Storage, and Logic Apps to extract financial data via 
+              Teams-integrated bots—targeting a 60% reduction in manual reporting effort.
+            </p>
+          </div>
         </div>
       </div>
 
